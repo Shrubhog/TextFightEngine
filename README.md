@@ -24,3 +24,6 @@ var Monsters = {
 ```
 Choose one randomly, then display it.
 UI is iffy right now.
+# Todo
+* Add actual javascript file
+* Who cares about an HTML file, everything is just text based right now, add console.log and inputs
