@@ -39,17 +39,17 @@ var Modifiers = [
 ]
 function pickMonster() {
   var monster =  Monsters[Math.round(Math.random * Monsters.length)]
-  document.getElementById("MonsterName") = monster.name
-  document.getElementById("MonsterAttack") = monster.attack
-  document.getElementById("MonsterHP") = monster.health
-  document.getElementById("MonsterCooldown") = monster.cooldown
+  document.getElementById("MonsterName").innerHTML = monster.name
+  document.getElementById("MonsterAttack").innerHTML = monster.attack
+  document.getElementById("MonsterHP").innerHTML = monster.health
+  document.getElementById("MonsterCooldown").innerHTML = monster.cooldown
   var modifier = Modifiers[Math.round(Math.random * Modifiers.length)]
-  document.getElementById("Modifier") = modifier.modifier
+  document.getElementById("Modifier").innerHTML = modifier.modifier
   if (typeof modifier.attack !== "undefined") {
-    document.getElementById("MonsterAttack") = monster.attack + " + " + modifier.attack
+    document.getElementById("MonsterAttack").innerHTML = monster.attack + " + " + modifier.attack
   } else if (typeof modifier.health !== "undefined") {
-    document.getElementById("MonsterHP") = monster.health + " + " + modifier.health
+    document.getElementById("MonsterHP").innerHTML = monster.health + " + " + modifier.health
   } else if (typeof modifier.cooldown !== "undefined") {
-    document.getElementById("MonsterCooldown") = monster.cooldown + " + " + modifier.cooldown
+    document.getElementById("MonsterCooldown").innerHTML = monster.cooldown + " + " + modifier.cooldown
   }
 }
