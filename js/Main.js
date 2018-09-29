@@ -39,6 +39,7 @@ var Modifiers = [
 ]
 function pickMonster() {
   var monster =  Monsters[Math.round(Math.random * Monsters.length)]
+  console.log("Found Monster: " + monster);
   document.getElementById("MonsterName").innerHTML = monster.name
   document.getElementById("MonsterAttack").innerHTML = monster.attack
   document.getElementById("MonsterHP").innerHTML = monster.health
