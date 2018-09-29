@@ -24,5 +24,5 @@ var Monsters = {
 ```
 Choose one randomly, then display it.
 UI is iffy right now.
-# Todo
-* Add actual javascript file (Done)
+## Phase one of Development is done.
+I have a random creature engine now. Now I need a way to attack them and have them attack me.
