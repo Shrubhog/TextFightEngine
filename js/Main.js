@@ -40,19 +40,5 @@ var Modifiers = [
 function pickMonster() {
   var monsterIndex = Math.round(Math.random() * Monsters.length)
   var monster =  Monsters[monsterIndex]
-  console.log("Found Monster: " + monster);
-  console.log("Monster index: " + monsterIndex);
-  document.getElementById("MonsterName").innerHTML = monster.name
-  document.getElementById("MonsterAttack").innerHTML = monster.attack
-  document.getElementById("MonsterHP").innerHTML = monster.health
-  document.getElementById("MonsterCooldown").innerHTML = monster.cooldown
   var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
-  document.getElementById("Modifier").innerHTML = modifier.modifier
-  if (typeof modifier.attack !== "undefined") {
-    document.getElementById("MonsterAttack").innerHTML = monster.attack + " + " + modifier.attack
-  } else if (typeof modifier.health !== "undefined") {
-    document.getElementById("MonsterHP").innerHTML = monster.health + " + " + modifier.health
-  } else if (typeof modifier.cooldown !== "undefined") {
-    document.getElementById("MonsterCooldown").innerHTML = monster.cooldown + " + " + modifier.cooldown
-  }
 }
