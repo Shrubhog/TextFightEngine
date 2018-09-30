@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <button type="button" name="button" onclick="pickMonster()">Choose Monster</button> <br>
-    Name: <span id='MonsterName'>Click button please.</span><br>
-    Attack: <span id="MonsterAttack">It's over 9000!!!</span><br>
-    HP: <span id="MonsterHP">42 bajillion</span><br>
-    Cooldown: <span id="MonsterCooldown">Almost negative</span><br>
-    Modifier: <span id="Modifier">Supremo Tacodile Czar</span><br>
+    <div class="container">
+      <div class="player">
+        Health: <span id="playerHealth">10</span>/<span id="maxPlayerHealth">10</span>
+        Attack: <span id="plAttack"></span>
+        Ready? <span id="plCool">Yes!</span>
+      </div>
+      <div class="enemy">
+        Name: <span id="enName"></span>
+        Health: <span id="enHealth">10</span>/<span id="maxEnHealth">10</span>
+        Attack: <span id="enAttack"></span>
+        Ready? <span id="enCool">Yes!</span>
+      </div>
+    </div>
   </body>
 </html>

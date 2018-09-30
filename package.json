@@ -1,0 +1,21 @@
+{
+  "name": "textfightengine",
+  "version": "0.0.2",
+  "description": "TextFightEngine",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shrubhog/TextFightEngine.git"
+  },
+  "author": "Shrubhog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shrubhog/TextFightEngine/issues"
+  },
+  "homepage": "https://github.com/Shrubhog/TextFightEngine#readme"
+}
