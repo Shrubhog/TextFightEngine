@@ -41,4 +41,5 @@ function pickMonster() {
   var monsterIndex = Math.round(Math.random() * Monsters.length)
   var monster =  Monsters[monsterIndex]
   var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
+  $("#enName").html(modifier.modifier + " " + monster.name)
 }
