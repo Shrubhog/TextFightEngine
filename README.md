@@ -26,3 +26,5 @@ Choose one randomly, then display it.
 UI is iffy right now.
 ## Phase one of Development is done.
 I have a random creature engine now. Now I need a way to attack them and have them attack me.
+### September 30, 2018
+Silly me, I forgot to push the changes. My rookie mistakes have been sitting unfixed while I say it's perfect. Wow. Pushing now.
