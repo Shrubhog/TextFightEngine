@@ -37,8 +37,12 @@ var Modifiers = [
     health:-1
   }
 ]
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 function pickMonster() {
-  var monsterIndex = Math.round(Math.random() * Monsters.length)
+  var monsterIndex = getRandomInt(Monsters.length)
   var monster =  Monsters[monsterIndex]
   var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
   $("#enName").html(modifier.modifier + " " + monster.name)
