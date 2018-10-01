@@ -44,7 +44,7 @@ function getRandomInt(max) {
 function pickMonster() {
   var monsterIndex = getRandomInt(Monsters.length)
   var monster =  Monsters[monsterIndex]
-  var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
+  var modifier = Modifiers[getRandomInt(Modifiers.length)]
   $("#enName").html(modifier.modifier + " " + monster.name)
   $("#enHealth").html(monster.health)
   $("#enCool").html(monster.cooldown)
