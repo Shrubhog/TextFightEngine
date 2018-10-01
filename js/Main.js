@@ -37,11 +37,19 @@ var Modifiers = [
     health:-1
   }
 ]
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 function pickMonster() {
-  var monsterIndex = Math.round(Math.random() * Monsters.length)
+  var monsterIndex = getRandomInt(Monsters.length)
   var monster =  Monsters[monsterIndex]
   var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
   $("#enName").html(modifier.modifier + " " + monster.name)
+  $("#enHealth").html(monster.health)
+  $("#enCool").html(monster.cooldown)
+  $("#maxEnHealth").html(monster.health)
+  $("#enAttack").html(monster.attack)
   if (typeof modifier.health !== "undefined") {
     $("#enHealth").html(monster.health + modifier.health)
     $("#maxEnHealth").html(monster.health + modifier.health)
