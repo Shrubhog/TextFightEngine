@@ -42,4 +42,12 @@ function pickMonster() {
   var monster =  Monsters[monsterIndex]
   var modifier = Modifiers[Math.round(Math.random() * Modifiers.length)]
   $("#enName").html(modifier.modifier + " " + monster.name)
+  if (typeof modifier.health !== "undefined") {
+    $("#enHealth").html(monster.health + modifier.health)
+    $("#maxEnHealth").html(monster.health + modifier.health)
+  } else if (typeof modifier.cooldown !== "undefined") {
+    $("#enCool").html(monster.cooldown + modifier.cooldown)
+  } else if (typeof modifier.attack !== "undefined") {
+    $("#enAttack").html(monster.attack + modifier.attack)
+  }
 }
